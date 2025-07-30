@@ -16,22 +16,7 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * Controller for managing company-related operations such as creation, updating, fetching, and deletion.
- * <p>
- * Role-based Access Control:
- * - Roles required: ADMIN, MANAGER
- * - Users with 'ADMIN' role have full access (create, update, delete, get).
- * - Users with 'MANAGER' role have limited access (view companies).
- * <p>
- * Endpoints:
- * - POST /addcompany: Creates a new company (ADMIN role required).
- * - GET /getCompany/{companyId}: Fetches a company by its ID (MANAGER role required).
- * - GET /getallCompany: Fetches all companies (MANAGER role required).
- * - PUT /updatecompany/{companyId}: Updates an existing company by ID (ADMIN role required).
- * - PATCH /updateCompanySomefileds/{companyId}: Partially updates a company (ADMIN role required).
- * - DELETE /delete/{companyId}: Deletes a company by ID (ADMIN role required).
- */
+
 @RestController
 @RequestMapping("/api/company")
 public class CompanyController {

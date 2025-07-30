@@ -25,18 +25,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
 
-/**
- * Controller for managing authentication-related operations such as user registration and login.
- * <p>
- * Endpoints:
- * - POST /register: Registers a new user.
- * - POST /login: Authenticates a user and issues a JWT token on success.
- * <p>
- * Notes:
- * - Utilizes {@link AuthenticationManager} for authenticating users.
- * - Generates JWT tokens using {@link JwtTokenProvider}.
- * - Logs authentication activity for auditing.
- */
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
